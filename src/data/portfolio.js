@@ -51,7 +51,7 @@ export const projects = [
 "Designed backend services to generate personalized savings projections, demonstrating real-world AI application integration.",
 "Built scalable REST APIs and modular backend architecture to support dynamic financial computations and datavisualization dashboards."
     ],
-     github: "https://github.com/your-repo",  // Uncomment and add your link
+     github: "https://github.com/Manoj-eerabattini-1/Finance-Analyser",  // Uncomment and add your link
     // live: "https://your-live-link.com",       // Uncomment and add your link
   },
   {
@@ -63,9 +63,21 @@ export const projects = [
       "RESTful APIs for leave workflows with automated email notifications to HR",
       "Interactive dashboards with real-time leave balance tracking in MongoDB",
     ],
-    // github: "https://github.com/your-repo",  // Uncomment and add your link
+     github: "https://github.com/Manoj-eerabattini-1/HRMS-Leave-Portal",  // Uncomment and add your link
     // live: "https://your-live-link.com",       // Uncomment and add your link
   },
+  {
+     year: "2026 - Present",
+    title: "JournalingO",
+    stack: ["React.js", "Node.js", "MongoDB",],
+    highlights: [
+      "Built a secure journaling web application with JWT-based authentication and personalized data access.",
+"Developed scalable backend services and responsive frontend workflows for managing user-specific entries efficiently.",
+"Implemented responsive UI features to enhance user experience."
+    ],
+     github: "https://github.com/Manoj-eerabattini-1/journalingo",  // Uncomment and add your link
+    // live: "https://your-live-link.com",       // Uncomment and add your link
+  }
   // {
   //   year: "2025",
   //   title: "Real-Time Chat Application",
