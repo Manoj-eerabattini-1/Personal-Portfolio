@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #F7F5F0;
+    color: #1A1A1A;
+  }
+}
+
+@layer utilities {
+  .font-serif {
+    font-family: 'DM Serif Display', serif;
+  }
+}
+
+/* Fade-in animation for scroll reveal */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Project card top border reveal */
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #1A3E6E;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover::before {
+  transform: scaleX(1);
+}
+
+/* Hero gradient blob */
+.hero-blob {
+  position: absolute;
+  top: -200px;
+  right: -200px;
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(26, 62, 110, 0.06) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* Stat card stagger */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.7s ease both;
+}
+
+.animate-fade-up-1 {
+  animation: fadeUp 0.6s ease both;
+}
+
+.animate-fade-up-2 {
+  animation: fadeUp 0.6s 0.1s ease both;
+}
+
+.animate-fade-up-3 {
+  animation: fadeUp 0.6s 0.2s ease both;
+}
